@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="arfav.jpg"/>
+</head>
+<body>
+    <nav>
+        <img src="arlogo.jpg" alt="Logo" class="logo">
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <div id="whatsapp-btn">
+        <a href="https://wa.me/+923426574425?text=Hello" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      
+      </div>
+      
+    <div class="container3">
+        <h1>Contact Us</h1>
+        <p>IF YOU HAVE DONE THE PAYMENT KINDLY SEND YOUR ORDER DETAIL <br> like (Your order link i.e your insta/tiktok link), payment screenshot, order amount and amount paid <br> AND YOUR NAME SO THAT WE CAN START YOUR ORDER </p>
+        <p>AFTER ENTERING ALL THE DETAILS CLICK ON CONTACT US BUTTON</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="serviceId">Service ID i.e (IG LIKES = IG001) :</label>
+
+            <input type="text" id="serviceId" required>
+            <br>
+            <label for="link">Your link i.e (your insta/tiktok link) :</label>
+            <input type="text" id="link" required>
+            <br>
+            <label for="amountPaidInRs">Amount Paid In Rs:</label>
+            <input type="text" id="amountPaidInRs" required>
+            <br>
+            <label for="orderQuantity">Order Quantity:</label>
+            <input type="text" id="orderQuantity" required>
+            <br>
+            <button class="btn-whatsapp" onClick="sendWhatsApp(event)">Contact Us on WhatsApp</button>  </form>
+        <script>function sendWhatsApp(e) {
+                e.preventDefault();
+                var name = document.getElementById("name").value;
+                var serviceId =
+                document .getElementById("serviceId").value;
+                var link = document.getElementById("link").value;
+                var amountPaidInRs = document.getElementById("amountPaidInRs").value;
+                var orderQuantity = document.getElementById("orderQuantity").value;
+                var message = "Hello, my name is " + name + "." + "My service id is" + serviceId +  "." +"I have placed an order for the link: " + link + "." + " Amount paid in Rs is: " + amountPaidInRs + "." + " And my order Quantity is: " + orderQuantity + ".";
+                var phoneNumber = "https://wa.me/+923426574425";
+                window.location.href = phoneNumber + "?text=" + message;
+            }</script>
+    
+    </div>
+</body>
+</html>

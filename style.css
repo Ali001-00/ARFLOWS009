@@ -1,0 +1,389 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color :darkslategray;
+}
+   /* Add Animation */
+   .container {
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  /* Make the Page Responsive */
+  * {
+    box-sizing: border-box;
+  }
+  /* Resize Images */
+img .side-img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+    nav .nav-items a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    nav .logo {
+        width: 98px;
+        height: 51px;
+        margin-left: 39px;
+    }
+
+    nav .nav-items {
+        /* margin-left: 37px; */
+        margin-right: 28px;
+    }
+    nav a:hover {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px;
+        border-radius: 5px;
+      }
+ 
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .title {
+    font-style: normal;
+    font-family: fangsong;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #251a58;
+    background-color: #42a5ed;
+    padding: 13px;
+    border-radius: 5px;
+    -webkit-text-stroke: 0.5px black;
+    align-items: FLEX-END;
+    justify-content: FLEX-END;
+    POSITION: RELATIVE;
+    top: 10px;
+    left: 5px;
+    TEXT-ALIGN: CENTER;
+}
+.container .side-img {
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+.container p {
+    font-size: 1.5em;
+    -webkit-text-stroke: 0.5px black;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    position: relative;
+    top: 65px;
+    left: 20px;
+    text-align: left;
+    
+}
+
+
+
+.flex-items {
+    display: "flex";
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+    align-content: center;
+    align-items: center;
+    margin-left: 89px;
+    justify-content: center;
+}
+.flex-items{
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+.flex-items button {
+    /* height: 22px; */
+    font-size: 31px;
+    font-family: math;
+    height: 47px;
+    background: linear-gradient(258deg, #42a5ed, #4e69ff);
+    border-radius: 14px;
+    cursor:pointer;
+    border: 2px solid black;
+    /* position: absolute; */
+    margin: -1px;
+    margin-right: 140px;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.flex-items button:hover {
+    background-color: #07e0e8;
+    transform: translate(10px, -10px);
+    box-shadow: 0px 0px 10px #00ffea;
+    text-shadow: 2px 2px 2px #2f00ff;
+    background-color: #00bfff;
+    transform: scale(1.1);
+}
+
+
+
+ 
+/* Services Styles */
+section {
+     width: 100%;
+     margin-bottom: 20px;
+     border: 6px solid black;
+     align-items: center;
+     padding: 5px;
+     border-radius: 21px;
+     background: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+}
+section{
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+    section h2 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    section img {
+        width: 100px;
+        height: auto;
+        margin-right: 20px;
+        float: left;
+        border-radius: 50%;
+    }
+
+    section .img-1 {
+        width: 233px;
+        height: auto;
+        margin-right: -33px;
+        float: left;
+        border-radius: 0%;
+       
+    }
+
+    section ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+.lo {
+color : blue ;
+}
+
+.button-section a {
+    background: border-box;
+    /* border: none; */
+    border: 2px solid White;
+    border-radius: 7px;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    background: antiquewhite;
+    margin-left: 8px;
+}
+
+.button-section {
+    display : flex ;
+    position : relative ;
+}
+
+/*.button-section a{
+    position: absolute;
+}*/
+
+.services-h1 {
+    display: flex;
+    justify-content: center;
+}
+
+    .services-h1 h1 {
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        font-family: initial;
+    }
+
+    section ul li {
+        font-size: 1.5em;
+        color: #6e36b8;
+        margin-bottom: 10px;
+        font-weight: bold;
+        background-color: aqua;
+        border-radius: 5px;
+        padding: 13px;
+        text-align: center;
+    }
+
+            section ul li a {
+                text-decoration: underline;
+                color: red;
+                transition: color 0.2s ease-in;
+            }
+
+                section ul li a:hover {
+                    color: #0237fe;
+                }
+/*contact section*/
+.container3{
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+.container3 .title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: brown;
+}
+.container3 h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: auto;
+    font-size: xxx-large;
+    color: yellow;
+}
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container3 p {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: auto;
+}
+
+.container3 button {
+    background-color: white;
+    cursor:pointer;
+    color: Green;
+    padding: 11px 20px;
+    border: 2px solid black;
+    border-radius: 126px;
+    font-size: 1.5em;
+    margin-top: 35px;
+    transition: background-color 0.2s ease-in;
+}
+.container3 button:hover {
+    background-color: Green;
+    color: white;
+    }
+    .container3 button {
+    transition: background-color 0.2s ease-in;
+    }
+form {
+    /* display: block; */
+    margin-top: 0em;
+    order: 6px solid black;
+    /* align-items: center; */
+    padding: 5px;
+    border-radius: 21px;
+    background: #1b88ac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    font-family: emoji;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .container .side-img {
+            width: 50%;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+}
+/* CSS for the WhatsApp button */
+#whatsapp-btn {
+    position: fixed; /* position the button in the bottom corner */
+    bottom: 30px;
+    right: 30px;
+    z-index: 99; /* make sure the button is on top of other elements */
+  }
+  #whatsapp-btn a {
+    display: block; /* display the link as a block element */
+    width: 60px;
+    height: 60px;
+    background-color: green; /* change the background color to match WhatsApp */
+    color: white;
+    text-align: center;
+    line-height: 60px; /* center the icon vertically */
+    border-radius: 50%; /* make the button circular */
+    font-size: 2em; /* increase the icon size */
+    text-decoration: none; /* remove the underline from the link */
+    transition: all 0.2s ease-in; /* add a transition for hover effect */
+  }
+  #whatsapp-btn a:hover {
+    background-color: darkgreen; /* change the background color on hover */
+    transform: scale(1.1); /* make the button slightly bigger on hover */
+  }
+  
