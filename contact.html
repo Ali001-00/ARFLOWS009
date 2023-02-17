@@ -30,9 +30,9 @@
             <label for="name">Name:</label>
             <input type="text" id="name" required>
             <br>
-            <label for="serviceId">Service ID i.e (IG LIKES = IG001) :</label>
+            <label for="serviceName">Service Name :</label>
 
-            <input type="text" id="serviceId" required>
+            <input type="text" id="serviceName" required>
             <br>
             <label for="link">Your link i.e (your insta/tiktok link) :</label>
             <input type="text" id="link" required>
@@ -43,20 +43,21 @@
             <label for="orderQuantity">Order Quantity:</label>
             <input type="text" id="orderQuantity" required>
             <br>
-            <button class="btn-whatsapp" onClick="sendWhatsApp(event)">Contact Us on WhatsApp</button>  </form>
-        <script>function sendWhatsApp(e) {
+            <button class="btn-whatsapp" onClick="sendWhatsApp(event)">Contact Us on WhatsApp</button>  
+        </form>
+        <script>
+            function sendWhatsApp(e) {
                 e.preventDefault();
                 var name = document.getElementById("name").value;
-                var serviceId =
-                document .getElementById("serviceId").value;
+                var serviceName = document.getElementById("serviceName").value;
                 var link = document.getElementById("link").value;
                 var amountPaidInRs = document.getElementById("amountPaidInRs").value;
                 var orderQuantity = document.getElementById("orderQuantity").value;
-                var message = "Hello, my name is " + name + "." + "My service id is" + serviceId +  "." +"I have placed an order for the link: " + link + "." + " Amount paid in Rs is: " + amountPaidInRs + "." + " And my order Quantity is: " + orderQuantity + ".";
+                var message = "Hello, my name is " + name + "." + " I have placed an order for the service: " + serviceName + "." + " My link is: " + link + "." + " Amount paid in Rs is: " + amountPaidInRs + "." + " And my order Quantity is: " + orderQuantity + ".";
                 var phoneNumber = "https://wa.me/+923426574425";
                 window.location.href = phoneNumber + "?text=" + message;
-            }</script>
-    
+            }
+        </script>
     </div>
 </body>
 </html>
